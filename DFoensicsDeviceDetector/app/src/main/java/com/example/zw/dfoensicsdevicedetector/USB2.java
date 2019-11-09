@@ -30,8 +30,7 @@ public class USB2 extends AppCompatActivity {
         imageButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bpStep2 = "2.If Encrypted\n" +
-                        "Check for password clues and follow steps below\n\n";
+                bpStep2 = "2.Check for password clues and follow steps below\n\n";
                 Intent i = new Intent(USB2.this, USB3.class);
                 i.putExtra("key", itemDetected); //pass name or id
                 i.putExtra("key1", bpStep1); //pass name or id
@@ -45,8 +44,7 @@ public class USB2 extends AppCompatActivity {
         imageButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bpStep2 = "2.If not encrypted\n" +
-                        "Device not encrypted\n\n";
+                bpStep2 = "2.Device not encrypted\n\n";
                 Intent i = new Intent(USB2.this, USB3.class);
                 i.putExtra("key", itemDetected); //pass name or id
                 i.putExtra("key1", bpStep1); //pass name or id

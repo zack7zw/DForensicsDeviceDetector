@@ -29,8 +29,7 @@ public class Laptop1 extends AppCompatActivity {
         imageButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bpStep1 = "\n\n1.If Locked\n" +
-                        "Check for password clues and follow steps below\n\n";
+                bpStep1 = "\n\n1.Check for password clues and follow steps below\n\n";
                 Intent i = new Intent(Laptop1.this, Laptop2.class);
                 i.putExtra("key", itemDetected); //pass name or id
                 i.putExtra("key1", bpStep1); //pass name or id
@@ -43,8 +42,7 @@ public class Laptop1 extends AppCompatActivity {
         imageButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bpStep1 = "\n\n1.If unlocked\n" +
-                        "Device not locked\n\n";
+                bpStep1 = "\n\n1.Device not locked\n\n";
                 Intent i = new Intent(Laptop1.this, Laptop2.class);
                 i.putExtra("key", itemDetected); //pass name or id
                 i.putExtra("key1", bpStep1); //pass name or id

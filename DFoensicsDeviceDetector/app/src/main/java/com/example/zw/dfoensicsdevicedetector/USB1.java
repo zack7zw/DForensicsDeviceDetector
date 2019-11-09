@@ -29,8 +29,7 @@ public class USB1 extends AppCompatActivity {
         imageButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bpStep1 = "\n\n1.If plugged in\n" +
-                        "Check if it is running a suspicious process\n\n";
+                bpStep1 = "\n\n1.Check if it is running a suspicious process\n\n";
                 Intent i = new Intent(USB1.this, USB2.class);
                 i.putExtra("key", itemDetected); //pass name or id
                 i.putExtra("key1", bpStep1); //pass name or id
@@ -43,8 +42,7 @@ public class USB1 extends AppCompatActivity {
         imageButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bpStep1 = "\n\n1.If plugged out\n" +
-                        "Device is plugged out\n\n";
+                bpStep1 = "\n\n1.Device is plugged out\n\n";
                 Intent i = new Intent(USB1.this, USB2.class);
                 i.putExtra("key", itemDetected); //pass name or id
                 i.putExtra("key1", bpStep1); //pass name or id

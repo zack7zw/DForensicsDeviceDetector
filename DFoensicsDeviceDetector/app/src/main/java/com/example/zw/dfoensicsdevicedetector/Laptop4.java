@@ -32,8 +32,7 @@ public class Laptop4 extends AppCompatActivity {
         imageButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bpStep4 = "4.If charging\n" +
-                        "Turn off power adapter and remove battery\n\n";
+                bpStep4 = "4.Turn off power adapter and remove battery\n\n";
                 Intent i = new Intent(Laptop4.this, ResultsPage.class);
                 i.putExtra("key", itemDetected); //pass name or id
                 i.putExtra("key1", bpStep1); //pass name or id
@@ -49,8 +48,7 @@ public class Laptop4 extends AppCompatActivity {
         imageButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bpStep4 = "4.If on battery\n" +
-                        "Remove battery\n\n";
+                bpStep4 = "4.Remove battery\n\n";
                 Intent i = new Intent(Laptop4.this, ResultsPage.class);
                 i.putExtra("key", itemDetected); //pass name or id
                 i.putExtra("key1", bpStep1); //pass name or id

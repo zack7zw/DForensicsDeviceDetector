@@ -31,8 +31,7 @@ public class Laptop3 extends AppCompatActivity {
         imageButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bpStep3 = "3.If suspect destructive program running\n" +
-                        "Force shut down the laptop by removing both the charger and battery from the laptop\n\n";
+                bpStep3 = "3.Force shut down the laptop by removing both the charger and battery from the laptop\n\n";
                 Intent i = new Intent(Laptop3.this, Laptop4.class);
                 i.putExtra("key", itemDetected); //pass name or id
                 i.putExtra("key1", bpStep1); //pass name or id
@@ -47,8 +46,7 @@ public class Laptop3 extends AppCompatActivity {
         imageButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bpStep3 = "3.If no destructive program\n" +
-                        "collect all live data, starting with RAM image to other live data such as network connection state, \n" +
+                bpStep3 = "3.Collect all live data, starting with RAM image to other live data such as network connection state, \n" +
                         "logged on users and currently executing processes. (Can be done using forensic tools like FTK Imager, Helix3 or Wind32dd)\n\n";
                 Intent i = new Intent(Laptop3.this, Laptop4.class);
                 i.putExtra("key", itemDetected); //pass name or id

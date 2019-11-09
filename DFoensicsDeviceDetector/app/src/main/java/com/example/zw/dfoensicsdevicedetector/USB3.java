@@ -31,8 +31,7 @@ public class USB3 extends AppCompatActivity {
         imageButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bpStep3 = "3.If destructive program\n" +
-                        "Remove device from computer immediately\n\n";
+                bpStep3 = "3.Remove device from computer immediately\n\n";
                 Intent i = new Intent(USB3.this, ResultsPage.class);
                 i.putExtra("key", itemDetected); //pass name or id
                 i.putExtra("key1", bpStep1); //pass name or id
@@ -47,8 +46,7 @@ public class USB3 extends AppCompatActivity {
         imageButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bpStep3 = "3.If no destructive program\n" +
-                        "no destructive program running\n\n";
+                bpStep3 = "3.No destructive program running\n\n";
                 Intent i = new Intent(USB3.this, ResultsPage.class);
                 i.putExtra("key", itemDetected); //pass name or id
                 i.putExtra("key1", bpStep1); //pass name or id
