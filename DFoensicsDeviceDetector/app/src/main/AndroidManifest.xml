@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zw.dfoensicsdevicedetector">
+
+    <!-- Needed to use camera and store photos -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="DForensicsDeviceDetector"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoadModel">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Classify"></activity>
+        <activity android:name=".USB3"></activity>
+        <activity android:name=".Smartphone2" />
+        <activity android:name=".Smartphone1" />
+        <activity android:name=".USB2" />
+        <activity android:name=".USB1" />
+        <activity android:name=".Laptop4" />
+        <activity android:name=".Laptop3" />
+        <activity android:name=".Laptop2" />
+        <activity android:name=".Laptop1" />
+        <activity android:name=".ResultsPage" />
+        <!--cropping activity-->
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
