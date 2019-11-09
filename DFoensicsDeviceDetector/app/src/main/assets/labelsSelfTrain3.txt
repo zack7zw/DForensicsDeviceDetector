@@ -1,3 +1,0 @@
-harddisk
-solidstatedrive
-thumbdrive
