@@ -48,8 +48,7 @@ public class USB3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 bpStep3 = "3.If no destructive program\n" +
-                        "collect all live data, starting with RAM image to other live data such as network connection state, \n" +
-                        "logged on users and currently executing processes. (Can be done using forensic tools like FTK Imager, Helix3 or Wind32dd)\n\n";
+                        "no destructive program running\n\n";
                 Intent i = new Intent(USB3.this, ResultsPage.class);
                 i.putExtra("key", itemDetected); //pass name or id
                 i.putExtra("key1", bpStep1); //pass name or id
